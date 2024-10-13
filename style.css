@@ -124,6 +124,9 @@ html {
   font-weight: 500;
   line-height: 110%;
 }
+.advert .advert__wrapper .advert__main-block .advert__link {
+  text-decoration: none;
+}
 .advert .advert__wrapper .advert__main-block .advert__text {
   color: #86928B;
   font-family: "Raleway";
