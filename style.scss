@@ -463,6 +463,11 @@ html{
             font-weight: 500;
             line-height: 150%; /* 27px */
             text-decoration: none;
+            transition: 0.3s;
+
+            &:hover{
+                color: #2C2D35;
+            }
         }
 
         .footer__title{
