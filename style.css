@@ -84,9 +84,12 @@ html {
 }
 .header .wrapper .list__link:hover {
   color: #598D66;
-  font-family: "Raleway";
-  font-size: 20px;
-  font-weight: 500;
+}
+.header .wrapper .list__link:focus {
+  background: #D4E8D9;
+}
+.header .wrapper .list__link:active {
+  color: #376B44;
 }
 .header .wrapper .header__cart .cart__img {
   height: 22px;
@@ -100,12 +103,16 @@ html {
   display: flex;
   gap: 30px;
 }
+.advert .advert__wrapper .advert__images {
+  width: 50%;
+}
 .advert .advert__wrapper .advert__img {
-  height: 621px;
+  width: 100%;
   margin-bottom: 69px;
 }
 .advert .advert__wrapper .advert__main-block {
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: center;
 }
@@ -114,7 +121,8 @@ html {
   font-family: "Raleway";
   font-size: 60px;
   font-weight: 500;
-  line-height: 110%; /* 66px */
+  line-height: 110%;
+  /* 66px */
   margin-bottom: 20px;
 }
 .advert .advert__wrapper .advert__main-block span {
@@ -133,7 +141,8 @@ html {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  /* 27px */
   margin-bottom: 60px;
 }
 .advert .advert__wrapper .advert__main-block .advert__btn {
@@ -158,6 +167,14 @@ html {
   background: #598D66;
   color: #F4F6F5;
 }
+.advert .advert__wrapper .advert__main-block .advert__btn:focus {
+  background: #D4E8D9;
+  color: #598D66;
+}
+.advert .advert__wrapper .advert__main-block .advert__btn:active {
+  background: #376B44;
+  color: white;
+}
 
 .reproductions {
   background: #F4F6F5;
@@ -176,7 +193,8 @@ html {
   font-family: "Raleway";
   font-size: 40px;
   font-weight: 500;
-  line-height: 110%; /* 44px */
+  line-height: 110%;
+  /* 44px */
 }
 .reproductions .reproductions__wrapper .reproductions__header .reproductions__btns {
   display: flex;
@@ -198,6 +216,14 @@ html {
 }
 .reproductions .reproductions__wrapper .reproductions__header .reproductions__btns .reproductions__btn:hover {
   background: #598D66;
+  color: #F4F6F5;
+}
+.reproductions .reproductions__wrapper .reproductions__header .reproductions__btns .reproductions__btn:focus {
+  border: 2px solid #598D66;
+  background: #D4E8D9;
+}
+.reproductions .reproductions__wrapper .reproductions__header .reproductions__btns .reproductions__btn:active {
+  background: #376B44;
   color: #F4F6F5;
 }
 .reproductions .reproductions__cards {
@@ -273,6 +299,14 @@ html {
   background: #598D66;
   color: #F4F6F5;
 }
+.reproductions .reproductions__cards .reproductions__card .card__btn:focus {
+  background: #D4E8D9;
+  color: #598D66;
+}
+.reproductions .reproductions__cards .reproductions__card .card__btn:active {
+  background: #376B44;
+  color: white;
+}
 
 .collection {
   background: #F4F6F5;
@@ -304,7 +338,8 @@ html {
   font-family: "Raleway";
   font-size: 40px;
   font-weight: 500;
-  line-height: 100%; /* 40px */
+  line-height: 100%;
+  /* 40px */
   margin-bottom: 20px;
 }
 .collection .collection__wrapper .collection__text {
@@ -313,7 +348,8 @@ html {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  /* 27px */
 }
 .collection .collection__wrapper .collection__btn {
   display: inline-flex;
@@ -332,10 +368,18 @@ html {
   font-size: 20px;
   font-weight: 500;
   transition: 0.3s;
+  border: 0;
 }
 .collection .collection__wrapper .collection__btn:hover {
   background-color: #FAEB97;
   color: #2C2D35;
+}
+.collection .collection__wrapper .collection__btn:focus {
+  border: 1px solid #A38314;
+  background: #FAEB97;
+}
+.collection .collection__wrapper .collection__btn:active {
+  background: #D9B949;
 }
 
 .team {
@@ -345,24 +389,28 @@ html {
   padding-top: 70px;
   padding-bottom: 70px;
   display: flex;
+  gap: 30px;
+}
+.team .team__wrapper .team__images {
+  width: 50%;
 }
 .team .team__wrapper .team__brushes {
-  width: 445px;
-  height: 440px;
-  margin-right: 30px;
+  width: 100%;
 }
 .team .team__wrapper .team__all {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 80px;
+  width: 50%;
 }
 .team .team__wrapper .team__all .team__title {
   color: #2C2D35;
   font-family: "Raleway";
   font-size: 40px;
   font-weight: 500;
-  line-height: 110%; /* 44px */
+  line-height: 110%;
+  /* 44px */
   margin-bottom: 20px;
 }
 .team .team__wrapper .team__all .team__text {
@@ -370,12 +418,14 @@ html {
   font-family: "Raleway";
   font-size: 18px;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  /* 27px */
   margin-bottom: 20px;
 }
 .team .team__wrapper .team__all .team__faces {
   display: flex;
   gap: 30px;
+  justify-content: flex-start;
 }
 .team .team__wrapper .team__all .team__faces .team__face {
   width: 80px;
@@ -389,6 +439,7 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 23px 29px 29px 14px;
+  gap: 25px;
 }
 .footer .footer__wrapper .footer__logo {
   width: 35px;
@@ -400,7 +451,8 @@ html {
   font-family: "Raleway";
   font-size: 18px;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  /* 27px */
   text-decoration: none;
   transition: 0.3s;
 }
@@ -435,13 +487,14 @@ html {
   font-family: "Raleway";
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 8px;
+  text-decoration: none;
 }
 .footer .footer__wrapper .footer__contacts .footer__workshop {
   color: #86928B;
-  font-family: Raleway;
+  font-family: "Raleway";
   font-size: 18px;
   font-weight: 500;
+  margin-top: 8px;
 }
 .footer .footer__wrapper .footer__links {
   display: flex;
@@ -481,7 +534,8 @@ html {
   font-family: "Raleway";
   font-size: 12px;
   font-weight: 500;
-  line-height: 120%; /* 14.4px */
+  line-height: 120%;
+  /* 14.4px */
 }
 .footer .footer__wrapper .footer__media .footer__media_img {
   display: flex;
@@ -530,11 +584,18 @@ html {
   }
 }
 @media screen and (max-width: 777px) {
+  .advert .advert__wrapper {
+    gap: 0;
+  }
   .advert .advert__wrapper .advert__img {
     display: none;
   }
   .advert .advert__wrapper .advert__main-block {
-    margin: 20px auto;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .advert .advert__wrapper .advert__images {
+    width: 0;
   }
 }
 @media screen and (max-width: 1325px) {
@@ -643,7 +704,7 @@ html {
     height: 325px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 840px) {
   .footer .footer__wrapper {
     flex-direction: column;
   }
@@ -652,7 +713,8 @@ html {
     font-family: "Raleway";
     font-size: 16px;
     font-weight: 500;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
   }
   .footer .footer__wrapper .footer__contacts {
     flex-direction: row;
