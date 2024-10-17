@@ -15,6 +15,16 @@ html {
   margin: 0;
 }
 
+.container2 {
+  overflow: scroll;
+  width: 100%;
+  max-width: 1032px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: 15px;
+}
+
 .head__burger {
   top: 75px;
   position: absolute;
@@ -305,33 +315,36 @@ html {
   color: white;
 }
 
-.reproductions {
-  background: #F4F6F5;
-}
-.reproductions__wrapper {
-  max-width: 1110px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-.reproductions__wrapper .reproductions__header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-.reproductions__wrapper .reproductions__header .reproductions__title {
+.reproductions__title {
   color: #2C2D35;
   font-family: "Raleway";
   font-size: 40px;
   font-weight: 500;
   line-height: 110%;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  max-width: 1100px;
   /* 44px */
 }
-.reproductions__wrapper .reproductions__header .reproductions__btns {
+
+.reproductions__header {
+  overflow: auto;
+  background-color: #F4F6F5;
+  margin-bottom: 20px;
+}
+.reproductions__header .header__title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 1032px;
+  margin: 0 auto;
+}
+
+.reproductions__btns {
   display: flex;
   gap: 32px;
 }
-.reproductions__wrapper .reproductions__header .reproductions__btns .reproductions__btn {
+.reproductions__btns .reproductions__btn {
   display: flex;
   padding: 10px 20px;
   align-items: flex-start;
@@ -345,17 +358,27 @@ html {
   font-weight: 500;
   transition: 0.4s;
 }
-.reproductions__wrapper .reproductions__header .reproductions__btns .reproductions__btn:hover {
+.reproductions__btns .reproductions__btn:hover {
   background: #598D66;
   color: #F4F6F5;
 }
-.reproductions__wrapper .reproductions__header .reproductions__btns .reproductions__btn:focus {
+.reproductions__btns .reproductions__btn:focus {
   border: 2px solid #598D66;
   background: #D4E8D9;
 }
-.reproductions__wrapper .reproductions__header .reproductions__btns .reproductions__btn:active {
+.reproductions__btns .reproductions__btn:active {
   background: #376B44;
   color: #F4F6F5;
+}
+
+.reproductions {
+  background: #F4F6F5;
+}
+.reproductions__wrapper {
+  max-width: 1110px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .reproductions__cards {
   gap: 25px;
@@ -741,9 +764,6 @@ html {
   .reproductions .reproductions__wrapper .reproductions__header {
     flex-direction: column;
     gap: 20px;
-  }
-  .reproductions .reproductions__wrapper .reproductions__header .reproductions__btns {
-    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 380px) {
