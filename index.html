@@ -21,12 +21,37 @@
                         </a>
                     </div>
                     <hr class="hr">
-                    <nav class="header__nav">
+                    <nav class="header__nav desktop">
                         <ul class="header__list list">
                             <li><a class="list__link" href="#reproductions">Репродукции</a></li>
                             <li><a class="list__link" href="#collection">Новинки</a></li>
                             <li><a class="list__link" href="#team">О нас</a></li>
                         </ul>
+                        <button class="head__burger burger">
+                            <input id="checkbox" class="burger__checkbox" type="checkbox">
+                            <label for="checkbox" class="burger__label">
+                                <span class="burger__line"></span>
+                            </label>
+                            <ul class="menu__ul burger__menu">
+                                <header class="burger__menu_header">
+                                    <img src="./img/logo.svg" alt="">
+                                    <h1 class="burger__menu_title">Ink. House</h1>
+                                </header>
+                                <div class="burger__menu_links">
+                                    <li class="menu__li">
+                                        <a class="menu__a" href="#reproductions">Репродукции</a>
+                                    </li>
+                
+                                    <li class="menu__li">
+                                        <a class="menu__a" href="#collection">Новинки</a>
+                                    </li>
+                
+                                    <li class="menu__li">
+                                        <a class="menu__a" href="#team">О нас</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </button>
                         <div class="header__cart cart">
                             <img class="cart__img" src="./img/shopcart.svg" alt="Корзина" />
                         </div>
@@ -34,33 +59,6 @@
                 </div>
             </div>
         </header>
-
-
-        <button class="head__burger burger">
-            <input id="checkbox" class="burger__checkbox" type="checkbox">
-            <label for="checkbox" class="burger__label">
-                <span class="burger__line"></span>
-            </label>
-            <ul class="menu__ul burger__menu">
-                <header class="burger__menu_header">
-                    <img src="./img/logo.svg" alt="">
-                    <h1 class="burger__menu_title">Ink. House</h1>
-                </header>
-                <div class="burger__menu_links">
-                    <li class="menu__li">
-                        <a class="menu__a" href="#reproductions">Репродукции</a>
-                    </li>
-
-                    <li class="menu__li">
-                        <a class="menu__a" href="#collection">Новинки</a>
-                    </li>
-
-                    <li class="menu__li">
-                        <a class="menu__a" href="#team">О нас</a>
-                    </li>
-                </div>
-            </ul>
-        </button>
 
         <section class="advert" id="advert">
             <div class="container">
@@ -212,8 +210,13 @@
                     </div>
 
                     <div class="footer__links">
+                        <div class="footer__contacts_workshop_mobile">
+                            <a href="tel:89995435454" class="footer__number footer__number-mobile">+7 (999) 543-54-54</a>
+                            <p class="footer__workshop footer__workshop-mobile">Мастерская</p>
+                        </div>
+
                         <div class="footer__reproductions_links">
-                            <a class="footer__title" href="#reproductions">Репродукции</a>
+                            <a class="footer__title repr__title" href="#reproductions">Репродукции</a>
                             <a class="footer__link" href="#reproductions">Франция</a>
                             <a class="footer__link" href="#reproductions">Германия</a>
                             <a class="footer__link" href="#reproductions">Англия</a>
@@ -230,21 +233,35 @@
                             <a class="footer__link" href="#team">Художники</a>
                             <a class="footer__link" href="#team">Менеджеры</a>
                         </div>
-                    </div>
-                    <hr class="footer__hr">
-                    <div class="footer__media">
-                        <div class="footer__media_img">
-                            <a class="footer__link_media" href="https://www.facebook.com/" target="_blank"><img
-                                    src="./img/facebook.svg" alt=""></a>
-                            <a class="footer__link_media" href="https://www.instagram.com/" target="_blank"><img
-                                    src="./img/insta.svg" alt=""></a>
-                            <a class="footer__link_media" href="https://www.youtube.com/" target="_blank"><img
-                                    src="./img/yt.svg" alt=""></a>
-                        </div>
+                        <div class="footer__media">
+                            <div class="footer__media_img">
+                                <a class="footer__link_media" href="https://www.facebook.com/" target="_blank"><img
+                                        src="./img/facebook.svg" alt=""></a>
+                                <a class="footer__link_media" href="https://www.instagram.com/" target="_blank"><img
+                                        src="./img/insta.svg" alt=""></a>
+                                <a class="footer__link_media" href="https://www.youtube.com/" target="_blank"><img
+                                        src="./img/yt.svg" alt=""></a>
+                            </div>
 
-                        <div class="footer__rights">
-                            <p class="footer__title_media">Ink. House ®</p>
-                            <p class="footer__title_media">All rights reserved</p>
+                            <div class="footer__rights">
+                                <p class="footer__title_media">Ink. House ®</p>
+                                <p class="footer__title_media">All rights reserved</p>
+                            </div>
+                        </div>
+                        <hr class="footer__hr">
+                        <div class="footer__media-mobile">
+                            <div class="footer__media_img">
+                                <a class="footer__link_media" href="https://www.facebook.com/" target="_blank"><img
+                                        src="./img/facebook.svg" alt=""></a>
+                                <a class="footer__link_media" href="https://www.instagram.com/" target="_blank"><img
+                                        src="./img/insta.svg" alt=""></a>
+                                <a class="footer__link_media" href="https://www.youtube.com/" target="_blank"><img
+                                        src="./img/yt.svg" alt=""></a>
+                            </div>
+
+                            <div class="footer__rights">
+                                <p class="footer__title_media">Ink. House ® All rights reserved</p>
+                            </div>
                         </div>
                     </div>
                 </div>
