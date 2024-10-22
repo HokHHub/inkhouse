@@ -21,6 +21,7 @@ html {
     margin: 0;
 }
 
+
 .container2 {
     overflow: scroll;
     width: 100%;
@@ -29,7 +30,6 @@ html {
     margin: 0 auto;
     padding: 0;
     // margin-left: 15px;
-    padding-left: 15px;
 
     &::-webkit-scrollbar {
         width: 0;
@@ -55,7 +55,7 @@ html {
 .burger__checkbox {
     display: none;
     // position: absolute;
-    // left: -254px;
+    // left: -239px;
 }
 
 
@@ -80,7 +80,7 @@ html {
     background-color: black;
     transition: 0.5s;
     top: 40px;
-    left: -224px;
+    left: -239px;
 }
 
 .burger__label {
@@ -187,12 +187,34 @@ html {
     top: 0;
 }
 
+.cart__img:hover path{
+    stroke: rgba(89, 141, 102, 1);
+}
+
+.cart__img:active path{
+    stroke: rgba(55, 107, 68, 1);
+}
+
+.footer__link_media:hover path{
+    fill: rgba(89, 141, 102, 1);
+    // fill: red;
+}
+
+.footer__link_media:focus path{
+    fill: #D4E8D9;
+}
+
+.footer__link_media:active path{
+    fill: rgba(55, 107, 68, 1);
+}
+
+
 .container {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header {
@@ -213,10 +235,11 @@ html {
         align-items: center;
         height: 100%;
         justify-content: space-between;
-        gap: 101px;
+        // gap: 101px;
         padding-top: 30px;
         padding-bottom: 30px;
         margin: 0 auto;
+        padding: 30px 10px 30px 10px;
 
         .header__company {
             display: flex;
@@ -281,9 +304,11 @@ html {
             }
 
             .header__cart {
+                cursor: pointer;
                 .cart__img {
                     height: 22px;
                     vertical-align: middle;
+                    transition: 0.3s;
                 }
             }
 
@@ -300,8 +325,7 @@ html {
     // display: none;
     &__wrapper {
         display: flex;
-        gap: 30px;
-        padding: 0 15px;
+        // gap: 30px;
         margin: 0 auto;
         align-items: center;
 
@@ -318,7 +342,8 @@ html {
             width: 50%;
             flex-direction: column;
             justify-content: center;
-            margin-top: 35px;
+            margin-left: 30px;
+            // margin-top: 35px;
 
             .advert__title {
                 color: #2C2D35;
@@ -328,6 +353,7 @@ html {
                 line-height: 110%;
                 /* 66px */
                 margin-bottom: 20px;
+                // white-space: nowrap;
             }
 
             span {
@@ -421,6 +447,7 @@ html {
 .reproductions__btns {
     display: flex;
     gap: 32px;
+    margin-left: 15px;
 
     .reproductions__btn {
         display: flex;
@@ -451,6 +478,11 @@ html {
             color: #F4F6F5;
         }
     }
+
+    .repr__btn_active {
+        background-color: #376B44;
+        color: #F4F6F5;
+    }
 }
 
 .reproductions {
@@ -459,7 +491,6 @@ html {
     &__wrapper {
         max-width: 1110px;
         width: 100%;
-        padding: 0 7px;
         margin: 0 auto;
     }
 
@@ -482,6 +513,7 @@ html {
                 margin-bottom: 20px;
                 overflow: hidden;
                 object-fit: cover;
+                object-position: top;
             }
 
             .card__author {
@@ -562,7 +594,6 @@ html {
     background: #F4F6F5;
     background-image: url('./img/collectionbg.jpg');
     margin: 0 auto;
-    max-width: 1440px;
     padding-top: 70px;
     padding-bottom: 70px;
     background-size: cover;
@@ -570,7 +601,6 @@ html {
     &__wrapper {
         display: flex;
         flex-direction: column;
-        padding: 0 15px;
         margin: 0 auto;
 
         .collection__shareholders {
@@ -655,7 +685,6 @@ html {
         display: flex;
         gap: 30px;
         margin: 0 auto;
-        padding: 0 15px;
         margin-bottom: 50px;
 
         .team__images {
@@ -789,7 +818,7 @@ html {
     .footer__links {
         display: flex;
         flex-direction: row;
-        gap: 58px;
+        gap: 40px;
         row-gap: 15px;
         justify-content: space-between;
         width: 100%;
@@ -819,7 +848,7 @@ html {
         display: flex;
         flex-direction: column;
         gap: 6px;
-        max-width: 128px;
+        max-width: 114px;
         width: 100%;
     }
 
@@ -871,84 +900,6 @@ html {
     display: none;
 }
 
-
-@media screen and (max-width:1017px) {
-    .container {
-        // padding-left: 15px;
-        // padding-right: 15px;
-        padding: 0;
-    }
-
-    .header .wrapper {
-        margin: 0 auto;
-        align-items: center;
-        flex-direction: column;
-        gap: 22px;
-
-        .hr {
-            width: 88%;
-            border: 1px solid #C3D1C6;
-        }
-
-        .header__nav {
-            width: 100%;
-            justify-content: space-between;
-            padding-left: 33px;
-            padding-right: 33px;
-        }
-    }
-}
-
-@media screen and (max-width:1017px) {
-    .header__nav {
-        flex-wrap: wrap;
-        gap: 1px;
-    }
-
-    .header__link {
-        gap: 25px;
-    }
-
-    .header .wrapper .header__nav .header__list {
-        flex-wrap: wrap;
-        row-gap: 20px;
-        column-gap: 60px;
-    }
-
-    .header .wrapper .header__nav {
-        row-gap: 30px
-    }
-}
-
-@media screen and (max-width:777px) {
-    .advert .advert__wrapper {
-        gap: 0
-    }
-
-    .advert .advert__wrapper .advert__img {
-        display: none;
-    }
-
-    .advert .advert__wrapper .advert__main-block {
-        margin: 20px 0;
-        width: 100%;
-        // padding: 0 27px 0 27px;
-    }
-
-    .advert .advert__wrapper .advert__images {
-        width: 0;
-    }
-
-    .advert__wrapper .advert__main-block .advert__title {
-        font-size: 36px;
-        margin-top: 50px;
-    }
-
-    .advert__wrapper .advert__main-block span {
-        font-size: 30px;
-    }
-}
-
 @media screen and (max-width:1325px) {
     .advert .advert__wrapper .advert__img {
         max-height: 621px;
@@ -969,6 +920,341 @@ html {
             // }
         }
     }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    .footer .footer__wrapper {
+        flex-direction: column;
+        padding: 23px 0 29px 0;
+
+        .footer__link {
+            color: #86928B;
+            font-family: 'Raleway';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        .footer__contacts {
+            flex-direction: row;
+            justify-content: space-between;
+            // padding: 0 30px;
+
+            .footer__workshop {
+                color: #86928B;
+                font-family: 'Raleway';
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+        .footer__links {
+            display: flex;
+            flex-direction: row;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            // padding: 0 77px 0 39px;
+            justify-content: space-between;
+        }
+
+        .footer__hr {
+            border: 1px solid #C3D1C6;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .footer__media_img {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .reproductions__cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .advert__wrapper .advert__main-block .advert__title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    // .team .team__wrapper .team__brushes {
+    //     width: 300px;
+    //     height: 325px;
+    // }
+
+    .team__wrapper .team__all {
+        margin-top: 30px;
+    }
+
+    .team__wrapper {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width:805px) {
+    .team .team__wrapper {
+        flex-direction: column;
+        // align-items: center;
+    }
+
+    .team__all {
+        margin-top: 15px;
+
+        .team__text {
+            max-width: 600px;
+        }
+
+        // .team__faces {
+        //     justify-content: center;
+        // }
+    }
+
+    .header .wrapper .header__nav {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:777px) {
+    .advert__wrapper .advert__main-block .advert__title {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+
+    .advert__wrapper .advert__main-block span {
+        font-size: 36px;
+    }
+
+    .advert .advert__wrapper .advert__img {
+        max-width: 330px;
+    }
+
+    .advert__wrapper .advert__main-block .advert__text{
+        margin-bottom: 40px;
+    }
+
+    .advert__wrapper .advert__main-block .advert__btn{
+        width: 210px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .footer .footer__media {
+        margin: 0 auto;
+    }
+
+    .footer .footer__wrapper .footer__hr {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .footer .footer__media {
+        display: none;
+    }
+
+    .footer__media-mobile {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .footer__hr {
+        height: 1px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .advert .advert__wrapper .advert__img {
+        max-width: 195px;
+        height: 239px;
+    }
+
+    .advert__wrapper .advert__main-block .advert__text {
+        font-size: 16px;
+    }
+
+    .advert__wrapper .advert__main-block .advert__btn {
+        font-size: 16px;
+    }
+
+    .advert__wrapper .advert__main-block .advert__title {
+        font-size: 30px;
+    }
+
+    .advert__wrapper .advert__main-block .advert__text{
+        margin-bottom: 30px;
+    }
+
+    .advert__wrapper .advert__main-block .advert__btn{
+        width: 178px;
+        height: 50px
+    }
+
+    .header__nav {
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+
+    .header__link {
+        gap: 25px;
+    }
+
+    .header .wrapper .header__nav .header__list {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 60px;
+    }
+
+    .header .wrapper .header__nav {
+        row-gap: 30px
+    }
+
+    .header .wrapper {
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+        gap: 22px;
+
+        .hr {
+            width: 88%;
+            border: 1px solid #C3D1C6;
+        }
+
+        .header__nav {
+            width: 100%;
+            justify-content: space-between;
+            padding-left: 33px;
+            padding-right: 33px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .collection .collection__wrapper .collection__header .collection__logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .collection .collection__wrapper .collection__header .collection__title {
+        font-size: 24px;
+    }
+
+    .advert__wrapper .advert__main-block .advert__title {
+        font-size: 30px;
+    }
+
+    .advert__wrapper .advert__main-block .advert__link span {
+        font-size: 30px;
+    }
+
+    .footer__wrapper .repr__title {
+        color: #2C2D35;
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .footer .footer__reproductions_links {
+        max-width: 114px;
+        width: 100%;
+    }
+
+    .footer__wrapper .footer__number-mobile {
+        font-size: 16px;
+    }
+
+    .footer__wrapper .footer__workshop-mobile {
+        font-size: 16px;
+    }
+
+    .reproductions__title {
+        font-size: 24px;
+    }
+
+    .reproductions__btns .reproductions__btn {
+        font-size: 18px;
+    }
+
+    .reproductions__cards .reproductions__card .card__name {
+        font-size: 24px;
+    }
+
+    .reproductions__cards .reproductions__card .card__author {
+        font-size: 16px;
+    }
+
+    .reproductions__cards .reproductions__card .card__type {
+        font-size: 16px;
+    }
+
+    .reproductions__cards .reproductions__card .card__price {
+        font-size: 20px;
+    }
+
+    .reproductions__cards .reproductions__card .card__btn {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 502px) {
+    .footer__contacts_workshop {
+        display: none;
+    }
+
+    .footer__contacts_workshop_mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__wrapper .footer__contacts .footer__company_name {
+        margin-bottom: 0px;
+    }
+
+    .footer .footer__wrapper .footer__links {
+        // padding: 0 15px;
+    }
+
+    .footer .footer__wrapper .footer__contacts {
+        // padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .team .team__brushes {
+        width: 100%;
+    }
+
+    .advert .advert__wrapper .advert__img {
+        display: none;
+    }
+
+    .advert .advert__wrapper .advert__main-block {
+        // margin: 20px 0;
+        width: 100%;
+        // padding: 0 27px 0 27px;
+        margin-left: 0;
+    }
+
+    .advert .advert__wrapper .advert__images {
+        width: 0;
+    }
+
+    .advert .advert__wrapper {
+        gap: 0
+    }
+
 }
 
 @media screen and (max-width:380px) {
@@ -1056,184 +1342,14 @@ html {
         }
     }
 
-    .collection__wrapper .collection__text{
-        font-size: 16px;
-    }
-
-}
-
-@media screen and (max-width:805px) {
-    .team .team__wrapper {
-        flex-direction: column;
-        // align-items: center;
-    }
-
-    .team__all {
-        margin-top: 15px;
-
-        .team__text {
-            max-width: 600px;
-        }
-
-        // .team__faces {
-        //     justify-content: center;
-        // }
-    }
-
-    .header .wrapper .header__nav{
-        gap: 20px;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .collection .collection__wrapper .collection__header .collection__logo{
-        height: 50px;
-        width: 50px;
-    }
-
-    .collection .collection__wrapper .collection__header .collection__title{
-        font-size: 24px;
-    }
-
-    .advert__wrapper .advert__main-block .advert__title {
-        font-size: 30px;
-    }
-
-    .advert__wrapper .advert__main-block .advert__link span {
-        font-size: 30px;
-    }
-
-    .footer__wrapper .repr__title {
-        color: #2C2D35;
-        font-family: 'Raleway';
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-    .footer .footer__reproductions_links {
-        max-width: 128px;
-        width: 100%;
-    }
-
-    .footer__wrapper .footer__number-mobile {
-        font-size: 16px;
-    }
-
-    .footer__wrapper .footer__workshop-mobile {
-        font-size: 16px;
-    }
-
-    .reproductions__title {
-        font-size: 24px;
-    }
-
-    .reproductions__btns .reproductions__btn {
-        font-size: 18px;
-    }
-
-    .reproductions__cards .reproductions__card .card__name {
-        font-size: 24px;
-    }
-
-    .reproductions__cards .reproductions__card .card__author {
-        font-size: 16px;
-    }
-
-    .reproductions__cards .reproductions__card .card__type {
-        font-size: 16px;
-    }
-
-    .reproductions__cards .reproductions__card .card__price {
-        font-size: 20px;
-    }
-
-    .reproductions__cards .reproductions__card .card__btn {
-        font-size: 20px;
-    }
-
-    .advert__wrapper .advert__main-block .advert__text{
+    .collection__wrapper .collection__text {
         font-size: 16px;
     }
 
     .advert__wrapper .advert__main-block .advert__btn{
-        font-size: 16px;
+        width: 154px;
     }
 
-    .advert__wrapper .advert__main-block .advert__title{
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width:810px) {
-    // .team .team__wrapper .team__brushes {
-    //     width: 300px;
-    //     height: 325px;
-    // }
-
-    .team__wrapper .team__all {
-        margin-top: 30px;
-    }
-
-    .team__wrapper {
-        gap: 0;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .footer .footer__wrapper {
-        flex-direction: column;
-        padding: 23px 0 29px 0;
-
-        .footer__link {
-            color: #86928B;
-            font-family: 'Raleway';
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 150%;
-        }
-
-        .footer__contacts {
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 0 30px;
-
-            .footer__workshop {
-                color: #86928B;
-                font-family: 'Raleway';
-                font-size: 16px;
-                font-weight: 500;
-            }
-        }
-
-        .footer__links {
-            display: flex;
-            flex-direction: row;
-            // justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-            padding: 0 77px 0 39px;
-            justify-content: space-between;
-        }
-
-        .footer__hr {
-            border: 1px solid #C3D1C6;
-            margin-bottom: 20px;
-            display: none;
-        }
-
-        .footer__media_img {
-            display: flex;
-            justify-content: center;
-        }
-    }
-
-    .reproductions__cards {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-
-    .advert__wrapper .advert__main-block .advert__title{
-        font-size: 40px;
-    }
 }
 
 @media screen and (max-width: 322px) {
@@ -1277,66 +1393,5 @@ html {
     .header .wrapper .header__nav .header__cart {
         position: absolute;
         right: 33px;
-    }
-}
-
-@media screen and (max-width: 740px) {
-    .footer .footer__media {
-        margin: 0 auto;
-    }
-
-    .footer .footer__wrapper .footer__hr {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 730px) {
-    .footer .footer__media {
-        display: none;
-    }
-
-    .footer__media-mobile {
-        display: flex;
-        margin: 0 auto;
-    }
-
-    .footer__hr {
-        height: 1px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 666px) {
-    .footer .footer__wrapper .footer__links {
-        padding: 0 33px
-    }
-}
-
-@media screen and (max-width: 502px) {
-    .footer__contacts_workshop {
-        display: none;
-    }
-
-    .footer__contacts_workshop_mobile {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__wrapper .footer__contacts .footer__company_name {
-        margin-bottom: 0px;
-    }
-
-    .footer .footer__wrapper .footer__links {
-        padding: 0 15px;
-    }
-
-    .footer .footer__wrapper .footer__contacts {
-        padding: 0 15px;
-    }
-}
-
-@media screen and (max-width: 470px) {
-    .team .team__brushes {
-        width: 100%;
     }
 }
