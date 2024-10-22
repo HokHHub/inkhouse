@@ -15,11 +15,26 @@ html {
   margin: 0;
 }
 
+.footer__link_media path {
+  transition: 0.3s;
+}
+
+.footer__link_media:hover path {
+  fill: rgb(89, 141, 102);
+}
+
+.footer__link_media:focus path {
+  fill: #D4E8D9;
+}
+
+.footer__link_media:active path {
+  fill: rgb(55, 107, 68);
+}
+
 .container2 {
   overflow: scroll;
-  width: 100%;
   max-width: 1032px;
-  width: 100%;
+  width: inherit;
   margin: 0 auto;
   padding: 0;
 }
@@ -156,26 +171,6 @@ html {
   top: 0;
 }
 
-.cart__img:hover path {
-  stroke: rgb(89, 141, 102);
-}
-
-.cart__img:active path {
-  stroke: rgb(55, 107, 68);
-}
-
-.footer__link_media:hover path {
-  fill: rgb(89, 141, 102);
-}
-
-.footer__link_media:focus path {
-  fill: #D4E8D9;
-}
-
-.footer__link_media:active path {
-  fill: rgb(55, 107, 68);
-}
-
 .container {
   max-width: 1100px;
   width: 100%;
@@ -260,6 +255,15 @@ html {
   height: 22px;
   vertical-align: middle;
   transition: 0.3s;
+}
+.header .wrapper .header__nav .header__cart .cart__img path {
+  transition: 0.3s;
+}
+.header .wrapper .header__nav .header__cart .cart__img:hover path {
+  stroke: rgb(89, 141, 102);
+}
+.header .wrapper .header__nav .header__cart .cart__img:active path {
+  stroke: rgb(55, 107, 68);
 }
 
 .advert {
@@ -357,16 +361,20 @@ html {
 }
 
 .reproductions__header {
+  display: flex;
   overflow: auto;
+  max-width: 1100px;
   background-color: #F4F6F5;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 .reproductions__header .header__title {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   max-width: 1032px;
-  margin: 0 auto;
+}
+.reproductions__header .reproductions__header_wrapper {
+  margin: 0 0 0 auto;
 }
 
 .reproductions__btns {
@@ -643,9 +651,6 @@ html {
   text-decoration: none;
   transition: 0.3s;
 }
-.footer__wrapper .footer__link:hover {
-  color: #2C2D35;
-}
 .footer__wrapper .footer__title {
   color: #2C2D35;
   font-family: "Raleway";
@@ -848,6 +853,9 @@ html {
   .advert__wrapper .advert__main-block .advert__title {
     font-size: 36px;
     margin-top: 50px;
+  }
+  .reproductions__header {
+    display: block;
   }
   .advert__wrapper .advert__main-block span {
     font-size: 36px;
@@ -1121,6 +1129,8 @@ html {
   }
   .header .wrapper {
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   .header .wrapper .header__nav .header__cart {
     position: absolute;
