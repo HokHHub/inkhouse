@@ -517,28 +517,29 @@ html {
   flex-direction: column;
   margin: 0 auto;
 }
-.collection__wrapper .collection__shareholders {
+.collection__shareholders {
   margin-bottom: 25px;
 }
-.collection__wrapper .collection__progression {
+.collection__progression {
   margin-bottom: 60px;
 }
-.collection__wrapper .collection__header {
+.collection__header {
   display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
 }
-.collection__wrapper .collection__header .collection__logo {
+.collection__header__logo {
   margin-right: 20px;
 }
-.collection__wrapper .collection__header .collection__title {
+.collection__title {
   color: #F4F6F5;
   font-family: "Raleway";
   font-size: 40px;
   font-weight: 500;
   line-height: 100%;
   /* 40px */
-  margin-bottom: 20px;
 }
-.collection__wrapper .collection__text {
+.collection__text {
   color: #FFF;
   font-family: "Raleway";
   font-size: 18px;
@@ -547,7 +548,7 @@ html {
   line-height: 150%;
   /* 27px */
 }
-.collection__wrapper .collection__btn {
+.collection__btn {
   display: inline-flex;
   height: 65px;
   padding: 20px 60px;
@@ -566,15 +567,15 @@ html {
   transition: 0.3s;
   border: 0;
 }
-.collection__wrapper .collection__btn:hover {
+.collection__btn:hover {
   background-color: #FAEB97;
   color: #2C2D35;
 }
-.collection__wrapper .collection__btn:focus {
+.collection__btn:focus {
   border: 1px solid #A38314;
   background: #FAEB97;
 }
-.collection__wrapper .collection__btn:active {
+.collection__btn:active {
   background: #D9B949;
 }
 
@@ -624,66 +625,52 @@ html {
 .team__wrapper .team__all .team__faces .team__face {
   width: 80px;
   height: 80px;
+  border-radius: 80px;
 }
 
 .footer {
   background-color: #D4E8D9;
 }
-.footer__wrapper {
+.footer .footer__wrapper {
   display: flex;
   justify-content: space-between;
   padding: 23px 29px 29px 14px;
   gap: 25px;
   margin: 0 auto;
 }
-.footer__wrapper .footer__logo {
-  width: 35px;
-  height: 35px;
-  margin-right: 8px;
-}
-.footer__wrapper .footer__link {
-  color: #86928B;
-  font-family: "Raleway";
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%;
-  /* 27px */
-  text-decoration: none;
-  transition: 0.3s;
-}
-.footer__wrapper .footer__title {
+.footer .footer__wrapper .footer__title {
   color: #2C2D35;
   font-family: "Raleway";
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
 }
-.footer__wrapper .footer__contacts {
+.footer .footer__wrapper .footer__contacts {
   display: flex;
   flex-direction: column;
 }
-.footer__wrapper .footer__contacts .footer__company_name {
+.footer .footer__wrapper .footer__contacts .footer__company_name {
   display: flex;
   align-items: center;
   margin-bottom: 41px;
   margin-right: 115px;
   white-space: nowrap;
 }
-.footer__wrapper .footer__company {
+.footer .footer__wrapper .footer__company {
   color: #598D66;
   font-family: "Raleway";
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
 }
-.footer__wrapper .footer__number {
+.footer .footer__wrapper .footer__number {
   color: #2C2D35;
   font-family: "Raleway";
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
 }
-.footer__wrapper .footer__workshop {
+.footer .footer__wrapper .footer__workshop {
   color: #86928B;
   font-family: "Raleway";
   font-size: 18px;
@@ -698,6 +685,21 @@ html {
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
+}
+.footer .footer__logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+.footer .footer__link {
+  color: #86928B;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 27px */
+  text-decoration: none;
+  transition: 0.3s;
 }
 .footer .footer__reproductions_links {
   display: flex;
@@ -760,6 +762,19 @@ html {
   display: flex;
   gap: 30px;
   margin-bottom: 6px;
+}
+
+.footer__link:hover {
+  color: rgb(89, 141, 102);
+}
+
+.footer__link:focus {
+  background: #D4E8D9;
+  color: rgb(44, 45, 53);
+}
+
+.footer__link:active {
+  color: rgb(55, 107, 68);
 }
 
 .footer__contacts_workshop_mobile {
