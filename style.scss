@@ -704,9 +704,9 @@ html {
             width: 100%;
         }
 
-        // .team__brushes {
-        //     width: 100%;
-        // }
+        .team__brushes {
+            max-height: 504px;
+        }
 
         .team__all {
             display: flex;
